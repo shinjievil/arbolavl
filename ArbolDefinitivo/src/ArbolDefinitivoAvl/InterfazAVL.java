@@ -24,7 +24,6 @@ public class InterfazAVL extends JPanel implements ActionListener {
         
         JFrame.setDefaultLookAndFeelDecorated(false);
         JFrame JFrameAVL = new JFrame("AVL TREE");
-        JFrameAVL.setResizable(false);
         JFrameAVL.setBackground(SystemColor.desktop);
         JFrameAVL.getContentPane().setBackground(SystemColor.activeCaption);
         JFrameAVL.setTitle("ARBOL AVL");
