@@ -11,6 +11,7 @@ public class InterfazAVL extends JPanel implements ActionListener {
     int a;
     
     public InterfazAVL(){
+    	
     	setForeground(UIManager.getColor("CheckBox.foreground"));
     	setBorder(null);
     	setBackground(SystemColor.activeCaption);
@@ -22,6 +23,7 @@ public class InterfazAVL extends JPanel implements ActionListener {
         //aqui se define el jframe donde se grafica los arboles
         JFrame.setDefaultLookAndFeelDecorated(false);
         JFrame JFrameAVL = new JFrame("AVL TREE");
+        JFrameAVL.setResizable(false);
         JFrameAVL.setBackground(SystemColor.desktop);
         JFrameAVL.getContentPane().setBackground(SystemColor.activeCaption);
         JFrameAVL.setTitle("ARBOL AVL");
@@ -29,7 +31,8 @@ public class InterfazAVL extends JPanel implements ActionListener {
         JFrameAVL.getContentPane().setLayout(null);
         JFrameAVL.getContentPane().add(frameScroll);
         JFrameAVL.setSize(1256, 660);
-
+        JFrameAVL.setLocationRelativeTo(null);    
+        
         txtDato = new JTextField();
         txtDato.setBackground(SystemColor.text);
         txtDato.setBounds(15,21,120,30);
@@ -66,7 +69,6 @@ public class InterfazAVL extends JPanel implements ActionListener {
         btnEliminar.setBounds(405, 21, 120, 30);
         JFrameAVL.getContentPane().add(btnEliminar);
         JFrameAVL.setVisible(true);
-
     }
 
 
