@@ -20,7 +20,7 @@ public class InterfazAVL extends JPanel implements ActionListener {
             ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED);
         frameScroll.setLocation(15,70);
         frameScroll.setSize(1215,540);
-        //aqui se define el jframe donde se grafica los arbolesAVL
+        //aqui se define el jframe donde se grafica los arbole
         
         JFrame.setDefaultLookAndFeelDecorated(false);
         JFrame JFrameAVL = new JFrame("AVL TREE");
