@@ -58,7 +58,8 @@ public class InterfazAVL extends JPanel implements ActionListener {
         btnEliminar.addActionListener(new ActionListener() {
         	public void actionPerformed(ActionEvent d) {
         		at.eliminar(Integer.parseInt(txtDato.getText()));
-        		repaint();                		
+        		repaint();
+        		txtDato.setText("");
         		
         	}
         });
@@ -75,6 +76,7 @@ public class InterfazAVL extends JPanel implements ActionListener {
         at.ingresarNodo(Integer.parseInt(txtDato.getText()));
         a=1;
         repaint();
+        txtDato.setText("");
     }
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
